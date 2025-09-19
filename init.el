@@ -79,6 +79,10 @@
 (setq auto-save-default nil)
 (setq column-number-mode t)
 
+(setq-default display-fill-column-indicator-column 80)
+(global-display-fill-column-indicator-mode 1)
+(set-face-foreground 'fill-column-indicator "blue")
+
 (if window-system
     (setq default-frame-alist
           (append (list '(width . 100) '(height . 40) default-frame-alist))))
